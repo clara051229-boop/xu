@@ -5,145 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>徐老师的备考站</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid min-vh-100 bg-gradient">
+    <div class="container">
         <!-- 顶部时间显示 -->
-        <div class="time-display text-center py-3">
-            <h2 id="current-time" class="text-white font-light"></h2>
+        <div class="time-display">
+            <h2 id="current-time"></h2>
         </div>
 
         <!-- 欢迎语 -->
-        <div class="welcome-section text-center my-5">
-            <h1 class="welcome-text">亲爱的 徐老师，记得好好休息哦～</h1>
+        <div class="welcome-section">
+            <h1 class="welcome-text">嗨亲爱的徐老师，今天也辛苦啦～ 我们慢慢来。</h1>
         </div>
 
-        <!-- 主要内容区 -->
-        <div class="container">
-            <div class="row g-4">
-                <!-- 每日一句 -->
-                <div class="col-md-6">
-                    <div class="card rounded-4 shadow-lg">
-                        <div class="card-body p-5">
-                            <h3 class="card-title text-center mb-4">每日一句 · 暖心话</h3>
-                            <div id="daily-quote" class="quote-text text-center mb-4"></div>
-                            <div class="text-center">
-                                <button id="change-quote" class="btn btn-outline-success rounded-pill px-5 py-2">换一句</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- 每日一句 -->
+        <div class="card">
+            <h3 class="card-title">每日一句 · 暖心话</h3>
+            <div id="daily-quote" class="quote-text"></div>
+            <button id="change-quote" class="btn btn-outline">换一句</button>
+        </div>
 
-                <!-- 正向计时器 -->
-                <div class="col-md-6">
-                    <div class="card rounded-4 shadow-lg">
-                        <div class="card-body p-5">
-                            <h3 class="card-title text-center mb-4">今日陪伴时长</h3>
-                            <div id="timer-display" class="timer-text text-center mb-4">00:00:00</div>
-                            <div class="d-flex justify-content-center gap-3 mb-4">
-                                <button id="start-timer" class="btn btn-success rounded-pill px-4 py-2">开始</button>
-                                <button id="pause-timer" class="btn btn-warning rounded-pill px-4 py-2">暂停</button>
-                                <button id="reset-timer" class="btn btn-danger rounded-pill px-4 py-2">重置</button>
-                            </div>
-                            <div class="text-center">
-                                <button id="complete-section" class="btn btn-outline-primary rounded-pill px-5 py-2">完成一小节</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- 正向计时器 -->
+        <div class="card">
+            <h3 class="card-title">今日陪伴时长</h3>
+            <div id="timer-display" class="timer-text">00:00:00</div>
+            <div class="timer-controls">
+                <button id="start-timer" class="btn btn-success">开始</button>
+                <button id="pause-timer" class="btn btn-warning">暂停</button>
+                <button id="reset-timer" class="btn btn-danger">重置</button>
+            </div>
+            <button id="complete-section" class="btn btn-primary">完成一小节</button>
+        </div>
 
-                <!-- 放松小憩 -->
-                <div class="col-md-12">
-                    <div class="card rounded-4 shadow-lg">
-                        <div class="card-body p-5">
-                            <h3 class="card-title text-center mb-4">放松小憩 · 白噪音/音乐</h3>
-                            <div class="d-flex flex-wrap justify-content-center gap-4">
-                                <div class="music-card p-3 rounded-3 bg-light">
-                                    <h5 class="text-center mb-2">雨声</h5>
-                                    <div class="audio-controls text-center">
-                                        <audio id="rain-audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls class="w-100"></audio>
-                                    </div>
-                                </div>
-                                <div class="music-card p-3 rounded-3 bg-light">
-                                    <h5 class="text-center mb-2">咖啡店</h5>
-                                    <div class="audio-controls text-center">
-                                        <audio id="cafe-audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" controls class="w-100"></audio>
-                                    </div>
-                                </div>
-                                <div class="music-card p-3 rounded-3 bg-light">
-                                    <h5 class="text-center mb-2">森林</h5>
-                                    <div class="audio-controls text-center">
-                                        <audio id="forest-audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" controls class="w-100"></audio>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- 放松小憩 -->
+        <div class="card">
+            <h3 class="card-title">放松小憩 · 白噪音/音乐</h3>
+            <div class="music-grid">
+                <div class="music-item">
+                    <h5>雨声</h5>
+                    <audio controls loop>
+                        <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=rain-and-thunder-112166.mp3" type="audio/mpeg">
+                        您的浏览器不支持音频播放。
+                    </audio>
                 </div>
-
-                <!-- 里程碑 -->
-                <div class="col-md-6">
-                    <div class="card rounded-4 shadow-lg">
-                        <div class="card-body p-5">
-                            <h3 class="card-title text-center mb-4">里程碑</h3>
-                            <div class="milestone-item mb-3">
-                                <h5>连续陪伴天数</h5>
-                                <p id="streak-days" class="text-center text-lg">0</p>
-                            </div>
-                            <div class="milestone-item mb-3">
-                                <h5>累计专注总时长</h5>
-                                <p id="total-time" class="text-center text-lg">0小时</p>
-                            </div>
-                            <div class="milestone-item">
-                                <h5>今日已完成小任务</h5>
-                                <p id="completed-tasks" class="text-center text-lg">0</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="music-item">
+                    <h5>咖啡店</h5>
+                    <audio controls loop>
+                        <source src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0a13f69d2.mp3?filename=coffee-shop-ambience-6993.mp3" type="audio/mpeg">
+                        您的浏览器不支持音频播放。
+                    </audio>
                 </div>
-
-                <!-- 今日小任务 -->
-                <div class="col-md-6">
-                    <div class="card rounded-4 shadow-lg">
-                        <div class="card-body p-5">
-                            <h3 class="card-title text-center mb-4">今日小任务</h3>
-                            <div class="task-item mb-3 d-flex align-items-center">
-                                <input type="checkbox" id="task-1" class="form-check-input me-3">
-                                <label for="task-1" class="form-check-label">记得喝四杯水呢这位老师</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 留言墙 -->
-                <div class="col-md-12">
-                    <div class="card rounded-4 shadow-lg">
-                        <div class="card-body p-5">
-                            <h3 class="card-title text-center mb-4">留言墙 / 悄悄话</h3>
-                            <div class="mb-4">
-                                <textarea id="message-input" class="form-control rounded-3" rows="4" placeholder="写下你的心情，或者想对我说的话..."></textarea>
-                            </div>
-                            <div class="text-center mb-4">
-                                <button id="save-message" class="btn btn-primary rounded-pill px-5 py-2">保存留言</button>
-                            </div>
-                            <div id="message-wall" class="message-wall mt-4"></div>
-                        </div>
-                    </div>
+                <div class="music-item">
+                    <h5>森林</h5>
+                    <audio controls loop>
+                        <source src="https://cdn.pixabay.com/download/audio/2021/09/06/audio_241115c835.mp3?filename=forest-wind-and-birds-6881.mp3" type="audio/mpeg">
+                        您的浏览器不支持音频播放。
+                    </audio>
                 </div>
             </div>
         </div>
 
+        <!-- 里程碑 -->
+        <div class="card">
+            <h3 class="card-title">里程碑</h3>
+            <div class="milestone-grid">
+                <div class="milestone-item">
+                    <h5>连续陪伴天数</h5>
+                    <p id="streak-days" class="milestone-number">0</p>
+                </div>
+                <div class="milestone-item">
+                    <h5>累计专注总时长</h5>
+                    <p id="total-time" class="milestone-number">0小时</p>
+                </div>
+                <div class="milestone-item">
+                    <h5>今日已完成小任务</h5>
+                    <p id="completed-tasks" class="milestone-number">0</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 今日小任务 -->
+        <div class="card">
+            <h3 class="card-title">今日小任务</h3>
+            <div class="task-item">
+                <input type="checkbox" id="task-1" class="task-checkbox">
+                <label for="task-1" class="task-label">记得喝四杯水呢这位老师</label>
+            </div>
+        </div>
+
+        <!-- 留言墙 -->
+        <div class="card">
+            <h3 class="card-title">留言墙 / 悄悄话</h3>
+            <textarea id="message-input" class="message-input" placeholder="写下你的心情，或者想对我说的话..."></textarea>
+            <button id="save-message" class="btn btn-primary">保存留言</button>
+            <div id="message-wall" class="message-wall"></div>
+        </div>
+
         <!-- 页脚 -->
-        <footer class="mt-5 py-3 text-center text-white">
+        <footer class="footer">
             <p>徐老师的备考站 | 陪伴你走过每一个备考的日子</p>
         </footer>
     </div>
 
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

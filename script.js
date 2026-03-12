@@ -1,35 +1,35 @@
 // 鼓励语句数组
 const encouragementQuotes = [
-    "慢慢来，比较快。"——龙应台,
+    "慢慢来，比较快。——龙应台",
     "备考是长跑，不是冲刺，保持自己的节奏就好。",
     "你走的每一步，都算数。",
-    "成功不是最终目标，失败也不是末日：最重要的是继续前进的勇气。"——温斯顿·丘吉尔,
+    "成功不是最终目标，失败也不是末日：最重要的是继续前进的勇气。——温斯顿·丘吉尔",
     "哪怕今天只背了十个单词，也是十个单词的进步。",
     "别着急，你正在扎根。",
-    "千里之行，始于足下。"——老子,
+    "千里之行，始于足下。——老子",
     "累了就说明你在走上坡路。",
     "今天不想学，所以才学了一点点，已经很棒了。",
-    "不要因路远而踌躇，只要走，终将到达。"——蒙古谚语,
+    "不要因路远而踌躇，只要走，终将到达。——蒙古谚语",
     "坚持本身就是一种天赋。",
     "今天的你，比昨天又多知道了一个知识点，值得拍拍手。",
     "不必每分钟都在学，但学的每分钟都要在。",
-    "涓滴之水终可磨损大石，不是由于它力量强大，而是由于昼夜不舍的滴坠。"——贝多芬,
+    "涓滴之水终可磨损大石，不是由于它力量强大，而是由于昼夜不舍的滴坠。——贝多芬",
     "哪怕进度慢一点，也没关系。",
     "你已经坚持了这么久，真的很不容易。",
     "学习像吃饭，一口一口，才能饱。",
     "今天的努力，会在某一天突然开花。",
     "即使今天效率不高，你也在靠近目标。",
-    "不怕慢，只怕站。"——中国谚语,
+    "不怕慢，只怕站。——中国谚语",
     "休息不是偷懒，是给大脑充电。",
     "偶尔停下来，是为了走更远的路。",
-    "休息的人才会工作。"——阿拉伯谚语,
+    "休息的人才会工作。——阿拉伯谚语",
     "累了就伸个懒腰，喝口水，看看窗外。",
     "照顾好身体，它陪着你一起努力呢。",
     "学不下去的时候，就出去走一走。",
     "允许自己偶尔慢一点，这不是错。",
     "困了就睡，醒了再学，别在床上硬撑。",
     "偶尔放空自己，也是一种必要的休息。",
-    "闲暇是做一切有益事情的时间。"——康德,
+    "闲暇是做一切有益事情的时间。——康德",
     "今天有没有好好吃饭？记得对自己好一点。",
     "哪怕天塌下来，也要先睡个好觉。",
     "备考的日子里，也别忘了爱自己。",
@@ -39,7 +39,7 @@ const encouragementQuotes = [
     "允许自己放松一天，明天会更有力量。",
     "不想学的时候就发发呆，我陪着你。",
     "生活除了备考，还有阳光、微风和好吃的。",
-    "懂得休息，才懂得前进。"——塞涅卡,
+    "懂得休息，才懂得前进。——塞涅卡",
     "错题是帮你进步的阶梯，不是耻辱。",
     "不必完美，只需要继续。",
     "允许自己犯错，允许自己调整。",
@@ -48,7 +48,7 @@ const encouragementQuotes = [
     "今天学不进去？没关系，明天又是新的一天。",
     "分数不理想，只是帮你发现了盲区。",
     "别和别人比，只和昨天的自己比。",
-    "完美的准备是进步的敌人。"——伏尔泰,
+    "完美的准备是进步的敌人。——伏尔泰",
     "偶尔做得不够好，不代表你不够好。",
     "不会的题，正好是今天的学习目标。",
     "忘掉的知识点，再背一遍就记住了。",
@@ -58,7 +58,7 @@ const encouragementQuotes = [
     "不完美才是学习的常态。",
     "允许自己有时候不想努力。",
     "不用每一分钟都高效，做个人就好。",
-    "对自己温柔一点，你不过是宇宙的孩子。"——佚名,
+    "对自己温柔一点，你不过是宇宙的孩子。——佚名",
     "你已经很努力了，可以歇口气。",
     "你不是一个人在战斗。",
     "这个世界上，有很多人理解你的辛苦。",
@@ -71,7 +71,7 @@ const encouragementQuotes = [
     "有人懂你的疲惫，有人为你心疼。",
     "哪怕全世界都不知道你在努力，我知道。",
     "你的付出，看得见的人会看见。",
-    "朋友是另一个自己。"——西塞罗,
+    "朋友是另一个自己。——西塞罗",
     "你的感受很重要，值得被听见。",
     "即使一个人坐在书桌前，也不是一个人。",
     "有人默默为你祝福。",
@@ -85,7 +85,7 @@ const encouragementQuotes = [
     "不管结果如何，你都已经收获了成长。",
     "未来还有无数种可能。",
     "你已经在成为更好的自己的路上了。",
-    "希望是清醒时的梦想。"——亚里士多德,
+    "希望是清醒时的梦想。——亚里士多德",
     "黑暗中只要有一点光，就能走下去。",
     "你心里那团火，不要让它熄灭。",
     "我会一直在这里，陪你到你想去的地方。",
@@ -97,7 +97,7 @@ const encouragementQuotes = [
 ];
 
 // 全局变量
-let timerInterval;
+let timerInterval = null;
 let startTime = 0;
 let elapsedTime = 0;
 let isRunning = false;
@@ -111,6 +111,7 @@ function init() {
     loadMilestoneData();
     loadMessages();
     loadTaskStatus();
+    loadTimerData();
     
     // 事件监听器
     document.getElementById('change-quote').addEventListener('click', displayRandomQuote);
@@ -149,6 +150,7 @@ function startTimer() {
         startTime = Date.now() - elapsedTime;
         timerInterval = setInterval(updateTimer, 1000);
         isRunning = true;
+        saveTimerData();
     }
 }
 
@@ -179,6 +181,11 @@ function updateTimer() {
     
     const formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     document.getElementById('timer-display').textContent = formattedTime;
+    
+    // 每10秒保存一次计时器数据
+    if (seconds % 10 === 0) {
+        saveTimerData();
+    }
 }
 
 // 完成一小节
@@ -186,6 +193,27 @@ function completeSection() {
     const milestoneData = getMilestoneData();
     milestoneData.completedTasksToday += 1;
     milestoneData.totalFocusTime += elapsedTime;
+    
+    // 更新连续天数
+    const today = new Date().toDateString();
+    if (milestoneData.lastActiveDate !== today) {
+        if (milestoneData.lastActiveDate) {
+            const lastDate = new Date(milestoneData.lastActiveDate);
+            const currentDate = new Date(today);
+            const diffTime = Math.abs(currentDate - lastDate);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            
+            if (diffDays === 1) {
+                milestoneData.streakDays += 1;
+            } else if (diffDays > 1) {
+                milestoneData.streakDays = 1;
+            }
+        } else {
+            milestoneData.streakDays = 1;
+        }
+        milestoneData.lastActiveDate = today;
+    }
+    
     saveMilestoneData(milestoneData);
     loadMilestoneData();
     
@@ -210,6 +238,9 @@ function saveMessage() {
         localStorage.setItem('messages', JSON.stringify(messages));
         loadMessages();
         messageInput.value = '';
+        alert('留言已保存！');
+    } else {
+        alert('请输入留言内容');
     }
 }
 
@@ -219,11 +250,11 @@ function loadMessages() {
     const messageWall = document.getElementById('message-wall');
     
     if (messages.length === 0) {
-        messageWall.innerHTML = '<p class="text-center text-muted">还没有留言，写下你的第一句话吧～</p>';
+        messageWall.innerHTML = '<p style="text-align: center; color: #999;">还没有留言，写下你的第一句话吧～</p>';
         return;
     }
     
-    messageWall.innerHTML = messages.map(msg => `
+    messageWall.innerHTML = messages.slice().reverse().map(msg => `
         <div class="message-item">
             <div class="message-date">${msg.date}</div>
             <div class="message-content">${msg.content}</div>
@@ -246,8 +277,9 @@ function loadTaskStatus() {
 // 保存计时器数据
 function saveTimerData() {
     const timerData = {
-        elapsedTime,
-        isRunning
+        elapsedTime: elapsedTime,
+        isRunning: isRunning,
+        startTime: startTime
     };
     localStorage.setItem('timerData', JSON.stringify(timerData));
 }
@@ -257,15 +289,21 @@ function loadTimerData() {
     const timerData = localStorage.getItem('timerData');
     if (timerData) {
         const data = JSON.parse(timerData);
-        elapsedTime = data.elapsedTime;
-        isRunning = data.isRunning;
+        elapsedTime = data.elapsedTime || 0;
+        isRunning = data.isRunning || false;
+        startTime = data.startTime || 0;
         
-        if (isRunning) {
-            startTime = Date.now() - elapsedTime;
+        // 更新显示
+        const hours = Math.floor(elapsedTime / 3600000);
+        const minutes = Math.floor((elapsedTime % 3600000) / 60000);
+        const seconds = Math.floor((elapsedTime % 60000) / 1000);
+        document.getElementById('timer-display').textContent = 
+            `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        
+        // 如果之前正在运行，恢复计时
+        if (isRunning && startTime > 0) {
             timerInterval = setInterval(updateTimer, 1000);
         }
-        
-        updateTimer();
     }
 }
 
@@ -293,8 +331,12 @@ function loadMilestoneData() {
     const data = getMilestoneData();
     const today = new Date().toDateString();
     
-    // 更新连续天数
+    // 检查是否是新的一天
     if (data.lastActiveDate !== today) {
+        // 如果是新的一天，重置今日任务数
+        data.completedTasksToday = 0;
+        
+        // 更新连续天数
         if (data.lastActiveDate) {
             const lastDate = new Date(data.lastActiveDate);
             const currentDate = new Date(today);
@@ -302,8 +344,10 @@ function loadMilestoneData() {
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
             
             if (diffDays === 1) {
-                data.streakDays += 1;
+                // 连续天数+1
+                data.streakDays = (data.streakDays || 0) + 1;
             } else if (diffDays > 1) {
+                // 断开了，重新计算
                 data.streakDays = 1;
             }
         } else {
@@ -311,17 +355,18 @@ function loadMilestoneData() {
         }
         
         data.lastActiveDate = today;
-        data.completedTasksToday = 0;
         saveMilestoneData(data);
     }
     
     // 更新显示
-    document.getElementById('streak-days').textContent = data.streakDays;
+    document.getElementById('streak-days').textContent = data.streakDays || 0;
     
-    const totalHours = Math.floor(data.totalFocusTime / 3600000);
-    document.getElementById('total-time').textContent = `${totalHours}小时`;
+    const totalHours = Math.floor((data.totalFocusTime || 0) / 3600000);
+    const totalMinutes = Math.floor(((data.totalFocusTime || 0) % 3600000) / 60000);
+    document.getElementById('total-time').textContent = totalMinutes > 0 ? 
+        `${totalHours}小时${totalMinutes}分钟` : `${totalHours}小时`;
     
-    document.getElementById('completed-tasks').textContent = data.completedTasksToday;
+    document.getElementById('completed-tasks').textContent = data.completedTasksToday || 0;
 }
 
 // 获取留言数据
@@ -331,7 +376,9 @@ function getMessages() {
 }
 
 // 页面加载完成后初始化
-window.onload = function() {
-    init();
-    loadTimerData();
-};
+document.addEventListener('DOMContentLoaded', init);
+
+// 页面关闭前保存数据
+window.addEventListener('beforeunload', function() {
+    saveTimerData();
+});

@@ -6,172 +6,325 @@
 }
 
 body {
-    font-family: 'Noto Serif SC', serif;
-    background-color: #F9F5F0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    background: linear-gradient(135deg, #E0F2E9 0%, #D4E6F1 50%, #F9F5F0 100%);
+    min-height: 100vh;
     color: #333;
+    line-height: 1.6;
 }
 
-/* 渐变背景 */
-.bg-gradient {
-    background: linear-gradient(135deg, #E0F2E9 0%, #D4E6F1 100%);
-    min-height: 100vh;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* 时间显示 */
 .time-display {
-    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    margin-bottom: 20px;
     backdrop-filter: blur(10px);
 }
 
 #current-time {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    color: #555;
     font-weight: 400;
 }
 
 /* 欢迎语 */
 .welcome-section {
-    margin: 2rem 0;
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
 }
 
 .welcome-text {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #333;
+    line-height: 1.4;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    line-height: 1.3;
 }
 
 /* 卡片样式 */
 .card {
     background-color: rgba(255, 255, 255, 0.9);
-    border: none;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
 .card-title {
+    font-size: 1.3rem;
     font-weight: 600;
     color: #555;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* 每日一句 */
 .quote-text {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1.1rem;
+    line-height: 1.8;
     color: #444;
-    min-height: 80px;
+    text-align: center;
+    min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/* 计时器 */
-.timer-text {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #333;
-    font-family: monospace;
+    padding: 15px;
+    background-color: rgba(224, 242, 233, 0.5);
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
 
 /* 按钮样式 */
 .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
     transition: all 0.3s ease;
+    text-align: center;
+    margin: 5px;
 }
 
 .btn:hover {
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* 音乐卡片 */
-.music-card {
-    min-width: 200px;
-    transition: transform 0.3s ease;
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #7CB342;
+    color: #7CB342;
 }
 
-.music-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.btn-outline:hover {
+    background-color: #7CB342;
+    color: white;
+}
+
+.btn-success {
+    background-color: #7CB342;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #689F38;
+}
+
+.btn-warning {
+    background-color: #FFB74D;
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #FFA726;
+}
+
+.btn-danger {
+    background-color: #E57373;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #EF5350;
+}
+
+.btn-primary {
+    background-color: #64B5F6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #42A5F5;
+}
+
+/* 计时器 */
+.timer-text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+/* 音乐播放器 */
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.music-item {
+    background-color: rgba(212, 230, 241, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.music-item h5 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.music-item audio {
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* 里程碑 */
+.milestone-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
 .milestone-item {
     background-color: rgba(224, 242, 233, 0.5);
-    padding: 1rem;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
 }
 
 .milestone-item h5 {
-    font-weight: 500;
-    color: #555;
-    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.milestone-number {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #7CB342;
+}
+
+/* 任务 */
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(224, 242, 233, 0.3);
+    border-radius: 12px;
+}
+
+.task-checkbox {
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.task-label {
+    font-size: 1.1rem;
+    color: #444;
+    cursor: pointer;
 }
 
 /* 留言墙 */
+.message-input {
+    width: 100%;
+    min-height: 100px;
+    padding: 15px;
+    border: 2px solid #E0F2E9;
+    border-radius: 12px;
+    font-size: 1rem;
+    resize: vertical;
+    margin-bottom: 15px;
+    font-family: inherit;
+}
+
+.message-input:focus {
+    outline: none;
+    border-color: #7CB342;
+}
+
 .message-wall {
-    background-color: rgba(224, 242, 233, 0.3);
-    padding: 1.5rem;
-    border-radius: 10px;
-    min-height: 200px;
+    margin-top: 25px;
+    max-height: 400px;
+    overflow-y: auto;
 }
 
 .message-item {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    background-color: rgba(249, 245, 240, 0.8);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border-left: 4px solid #7CB342;
 }
 
 .message-date {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: #999;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
 }
 
 .message-content {
-    line-height: 1.5;
     color: #444;
+    line-height: 1.6;
+}
+
+/* 页脚 */
+.footer {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    font-size: 0.9rem;
 }
 
 /* 响应式设计 */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .welcome-text {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     
     .timer-text {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     
-    .quote-text {
-        font-size: 1rem;
+    .card {
+        padding: 20px;
     }
     
-    .card-body {
-        padding: 2rem;
-    }
-    
-    .music-card {
-        min-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .welcome-text {
-        font-size: 1.5rem;
-    }
-    
-    .card-body {
-        padding: 1.5rem;
+    .timer-controls {
+        flex-direction: column;
+        align-items: center;
     }
     
     .btn {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .music-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .milestone-grid {
+        grid-template-columns: 1fr;
     }
 }
